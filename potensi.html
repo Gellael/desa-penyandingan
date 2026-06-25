@@ -10,6 +10,7 @@
 </head>
 <body class="bg-slate-50 flex flex-col min-h-screen text-slate-800 antialiased overflow-x-hidden">
 
+    <!-- Navbar -->
     <nav class="bg-white/70 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
@@ -23,11 +24,11 @@
                 <div class="hidden md:flex items-center space-x-1 font-bold text-sm">
                     <a href="index.html" class="text-slate-600 hover:text-emerald-600 hover:bg-slate-50 px-5 py-2.5 rounded-2xl transition-all">Beranda</a>
                     <a href="profil.html" class="text-slate-600 hover:text-emerald-600 hover:bg-slate-50 px-5 py-2.5 rounded-2xl transition-all">Profil</a>
-                    <a href="potensi.html" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-5 py-2.5 rounded-2xl shadow-md">Potensi</a>
+                    <a href="potensi.html" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-5 py-2.5 rounded-2xl shadow-md shadow-emerald-600/10">Potensi</a>
                     <a href="kontak.html" class="text-slate-600 hover:text-emerald-600 hover:bg-slate-50 px-5 py-2.5 rounded-2xl transition-all">Kontak</a>
                 </div>
-                <button id="menu-btn" class="md:hidden p-2.5 rounded-xl bg-slate-100 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <button id="menu-btn" class="md:hidden p-2.5 rounded-xl bg-slate-100 focus:outline-none hover:bg-slate-200 transition">
+                    <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </div>
@@ -39,54 +40,95 @@
         </div>
     </nav>
 
-    <section class="bg-gradient-to-b from-slate-950 to-slate-900 text-white py-16 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/40 via-transparent to-transparent"></div>
-        <div class="relative z-10 max-w-6xl mx-auto px-6">
-            <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">Potensi Sektoral & Komoditas</h1>
-            <p class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-widest">Sektor Kebun Utama Rakyat Wilayah Kaur Tengah</p>
+    <!-- Header Section -->
+    <section class="bg-gradient-to-b from-slate-950 to-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/30 via-transparent to-transparent"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-4 tracking-widest uppercase">
+                Sumber Daya Wilayah
+            </span>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Potensi Sektoral & Komoditas</h1>
+            <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                Pemetaan aset perkebunan dan ketahanan pangan yang menjadi pilar penggerak ekonomi kerakyatan di wilayah Kaur Tengah.
+            </p>
         </div>
     </section>
 
-    <main class="max-w-6xl mx-auto px-6 py-16 w-full space-y-12 flex-grow">
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16 w-full space-y-16 flex-grow">
+        
+        <!-- Grid Kartu Potensi Desa -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/60 shadow-md">
+            <!-- Kartu 1 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                </div>
                 <span class="text-[10px] font-black text-emerald-600 uppercase tracking-widest bg-emerald-50 px-3 py-1 rounded-md">Klaster Perkebunan</span>
-                <h3 class="text-xl font-extrabold text-slate-900 mt-4 mb-2">Kelapa Sawit Swadaya</h3>
+                <h3 class="text-2xl font-extrabold text-slate-900 mt-4 mb-3">Kelapa Sawit Swadaya</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">
                     Sektor komoditas andalan utama warga berupa hasil panen tandan buah segar kelapa sawit yang dipasok langsung ke pengepul besar menjadi fondasi finansial masyarakat Desa Penyandingan.
                 </p>
             </div>
-            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/60 shadow-md">
-                <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-md">Klaster Ketahanan Pangan</span>
-                <h3 class="text-xl font-extrabold text-slate-900 mt-4 mb-2">Sawah & Hortikultura Musiman</h3>
+            
+            <!-- Kartu 2 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <span class="text-[10px] font-black text-teal-600 uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-md">Ketahanan Pangan</span>
+                <h3 class="text-2xl font-extrabold text-slate-900 mt-4 mb-3">Sawah & Hortikultura</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">
                     Pemanfaatan area sawah tadah hujan berkombinasi dengan sistem perkebunan tanaman musiman seperti cabai dan palawija guna menyokong kebutuhan harian konsumsi pangan lokal.
                 </p>
             </div>
         </div>
 
-        <section class="space-y-5">
-            <h2 class="text-2xl font-black text-slate-900 tracking-tight">Orientasi Spasial Regional Kabupaten Kaur</h2>
-            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-md">
-                <div class="grid md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-6">
-                        <img src="https://picsum.photos/id/1025/600/400" alt="Satelit Terestrial Map" class="rounded-2xl border border-slate-200 w-full object-cover h-56 sm:h-64 shadow-inner">
-                    </div>
-                    <div class="md:col-span-6 space-y-4">
-                        <h3 class="text-lg font-bold text-slate-900">Aksesibilitas Geografis Jalur Pesisir</h3>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Wilayah administratif Kaur Tengah menempati area koridor pesisir barat Sumatra bagian selatan. Letak strategis Desa Penyandingan yang berada dekat poros sirkulasi logistik memudahkan pengiriman hasil panen ke pusat perkotaan terdekat di Bintuhan.
-                        </p>
-                    </div>
+        <!-- WebGIS Banner CTA (PENGGANTI GAMBAR) -->
+        <section class="relative bg-gradient-to-tr from-slate-900 via-slate-800 to-emerald-950 rounded-[2.5rem] p-8 sm:p-14 shadow-2xl overflow-hidden flex flex-col items-center text-center">
+            
+            <!-- Elemen Dekorasi Glow -->
+            <div class="absolute top-0 right-0 w-72 h-72 bg-emerald-500/20 rounded-full blur-[80px]"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-teal-500/20 rounded-full blur-[80px]"></div>
+
+            <div class="relative z-10 max-w-3xl space-y-6">
+                <!-- Badge -->
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Sistem Informasi Geografis
+                </span>
+                
+                <!-- Judul Banner -->
+                <h2 class="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
+                    Jelajahi Peta Zonasi Spasial <br>
+                    <span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Desa Penyandingan</span>
+                </h2>
+                
+                <!-- Teks Deskripsi -->
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+                    Akses platform pemetaan digital interaktif untuk meninjau batas wilayah administratif, area fasilitas publik, sebaran titik pemukiman, hingga analisis tematik zonasi kawasan di Kecamatan Kaur Tengah secara langsung.
+                </p>
+
+                <!-- Tombol Navigasi Besar (WebGIS) -->
+                <div class="pt-6">
+                    <a href="https://webgis-penyandingan.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold text-sm sm:text-base px-8 py-5 rounded-2xl shadow-xl shadow-emerald-500/25 transition-all duration-300 group hover:scale-105 w-full sm:w-auto">
+                        <svg class="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                        </svg>
+                        Buka Aplikasi WebGIS Penyandingan
+                    </a>
                 </div>
             </div>
         </section>
+        
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs">
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center text-xs border-t border-slate-800 mt-auto">
         <p>&copy; 2026 Pemdes Penyandingan. All rights reserved.</p>
     </footer>
 
+    <!-- Script Hamburger Menu -->
     <script>
         document.getElementById('menu-btn').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
