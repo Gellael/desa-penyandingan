@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pusat Layanan — Desa Penyandingan</title>
+    <title>Kontak — Desa Penyandingan</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,26 +41,26 @@
     <section class="bg-gradient-to-b from-slate-950 to-slate-900 text-white py-16 relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/40 via-transparent to-transparent"></div>
         <div class="relative z-10 max-w-6xl mx-auto px-6">
-            <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">Korespondensi Pelayanan</h1>
-            <p class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-widest">Hubungi Hub Informasi Balai Desa Penyandingan</p>
+            <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">Layanan & Kontak</h1>
+            <p class="text-emerald-400 text-xs sm:text-sm font-bold uppercase tracking-widest">Hubungi Pemerintah Desa Penyandingan</p>
         </div>
     </section>
 
     <main class="max-w-6xl mx-auto px-6 py-16 w-full flex-grow">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div class="lg:col-span-5 space-y-6">
-                <h2 class="text-2xl font-black text-slate-900 tracking-tight">Sekretariat Hub</h2>
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight">Kantor Desa</h2>
                 <p class="text-slate-500 text-sm leading-relaxed">
-                    Pengurusan dokumen pengantar mutasi warga, verifikasi kartu keluarga, pelayanan umum, serta integrasi aduan pembangunan wilayah dapat dikoordinasikan langsung bersama aparatur.
+                    Pelayanan administrasi kependudukan, informasi publik, serta pengaduan warga dapat dilakukan langsung di Kantor Kepala Desa.
                 </p>
                 <div class="bg-white p-6 rounded-3xl border border-slate-200/60 shadow-md space-y-4">
                     <div>
-                        <h4 class="font-bold text-slate-400 text-[10px] uppercase tracking-wider">Alamat Fisik Resmi</h4>
-                        <p class="text-xs sm:text-sm text-slate-700 mt-1">Area Kantor Balai Desa Penyandingan, Kecamatan Kaur Tengah, Kabupaten Kaur, Provinsi Bengkulu, Indonesia.</p>
+                        <h4 class="font-bold text-slate-400 text-[10px] uppercase tracking-wider">Alamat Kantor</h4>
+                        <p class="text-xs sm:text-sm text-slate-700 mt-1">Balai Desa Penyandingan, Kecamatan Kaur Tengah, Kabupaten Kaur, Bengkulu.</p>
                         <p class="text-xs font-black text-emerald-600 mt-1">KODE POS 38961</p>
                     </div>
                     <div class="border-t border-slate-100 pt-4">
-                        <h4 class="font-bold text-slate-400 text-[10px] uppercase tracking-wider">Operasional Jam Layanan</h4>
+                        <h4 class="font-bold text-slate-400 text-[10px] uppercase tracking-wider">Jam Operasional</h4>
                         <p class="text-xs text-slate-600 mt-1">Senin s/d Kamis — Pukul 08:00 - 15:00 WIB<br>Jumat — Pukul 08:00 - 11:30 WIB</p>
                     </div>
                 </div>
@@ -68,19 +68,19 @@
 
             <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/60 shadow-lg">
                 <h3 class="text-base sm:text-lg font-black text-slate-900 mb-6 flex items-center gap-2">
-                    <span class="w-1.5 h-5 bg-emerald-600 rounded-full"></span> Saluran Aspirasi & Aduan Warga
+                    <span class="w-1.5 h-5 bg-emerald-600 rounded-full"></span> Layanan Pengaduan & Aspirasi
                 </h3>
-                <form action="#" method="POST" class="space-y-4">
+                <form id="contact-form" class="space-y-4">
                     <div>
-                        <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Nama Sesuai KTP</label>
-                        <input type="text" placeholder="Masukkan nama lengkap" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition" required>
+                        <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Nama Lengkap</label>
+                        <input type="text" id="contact-name" placeholder="Masukkan nama lengkap" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition" required>
                     </div>
                     <div>
-                        <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Deskripsi Pesan / Keluhan Pembangunan</label>
-                        <textarea rows="4" placeholder="Tulis permohonan informasi atau pengaduan secara mendetail..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition resize-none" required></textarea>
+                        <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Pesan atau Pengaduan</label>
+                        <textarea id="contact-message" rows="4" placeholder="Tuliskan pesan, aspirasi, atau pengaduan Anda di sini..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition resize-none" required></textarea>
                     </div>
                     <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-4 px-4 rounded-xl shadow-md shadow-emerald-600/10 transition-all text-sm">
-                        Kirim Laporan Ke Balai Desa
+                        Kirim Pesan
                     </button>
                 </form>
             </div>
@@ -94,6 +94,18 @@
     <script>
         document.getElementById('menu-btn').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const message = document.getElementById('contact-message').value;
+            const formattedName = encodeURIComponent(name);
+            const formattedMessage = encodeURIComponent(message);
+            const phoneNumber = '6285669350563'; // 085669350563 -> 6285669350563
+            
+            const waUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Halo%20Pemerintah%20Desa%20Penyandingan%2C%20saya%20*${formattedName}*%20ingin%20menyampaikan%20pesan%2Fpengaduan%3A%0A%0A${formattedMessage}`;
+            window.open(waUrl, '_blank');
         });
     </script>
 </body>
